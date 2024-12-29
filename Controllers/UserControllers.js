@@ -161,7 +161,7 @@ const sendmail = async (email , token) => {
           from: 'jobFusionXg@gmail.com', // sender address
           to: email, // list of receivers
           subject: "Forget Password Request", // Subject line
-          text: `please click below link \n http://localhost:8090/user/forgotPassword/${token}`, // plain text body
+          text: `please click below link \n https://job-portal-backend-1-wd2i.onrender.com/user/forgotPassword/${token}`, // plain text body
         });
       
         console.log("Message sent: %s", info.messageId);
